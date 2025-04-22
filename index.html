@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Majid Hussain - MERN Stack Developer with 5+ years of experience in ReactJS, NodeJS, and modern web technologies. Portfolio showcasing projects and professional experience."
+    />
+    <meta
+      name="keywords"
+      content="Majid Hussain, portfolio, MERN stack, React, Node.js, JavaScript, TypeScript, Software Engineer, Web Developer, Full Stack Developer, ReactJS, MongoDB, ExpressJS"
+    />
+    <meta name="author" content="Majid Hussain" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://majid-hussain.com/" />
+    <meta
+      property="og:title"
+      content="Majid Hussain - MERN Stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Professional portfolio showcasing my skills, projects, and 5+ years of experience in web development using React, Node.js, and modern technologies."
+    />
+    <meta property="og:image" content="assets/images/profile.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://majid-hussain.com/" />
+    <meta
+      property="twitter:title"
+      content="Majid Hussain - MERN Stack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Professional portfolio showcasing my skills, projects, and experience as a MERN Stack Developer."
+    />
+    <meta property="twitter:image" content="assets/images/profile.jpeg" />
+
+    <title>Majid Hussain - MERN Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">MH</div>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-download">
+            <a href="assets/files/Majid_Hussain_Resume.pdf" download
+              ><i class="fas fa-download"></i> Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home/Landing Section -->
+    <section id="home" class="section">
+      <div class="container home-container">
+        <div class="profile-info">
+          <h1>Majid Hussain</h1>
+          <p class="tagline">MERN Stack Developer</p>
+          <p class="brief-intro">
+            I build modern, responsive web applications with focus on clean code
+            and exceptional user experience.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outlined">Contact Me</a>
+          </div>
+          <div class="profile-links">
+            <a
+              href="https://github.com/majidhussainmk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="profile-link"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              href="assets/files/Majid_Hussain_Resume.pdf"
+              download
+              class="profile-link"
+            >
+              <i class="fas fa-file-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="assets/images/profile.jpeg" alt="Majid Hussain" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="bio">
+            <p class="lead-text">
+              I am an accomplished Software Engineer with 5 years of expertise
+              in application development, specializing in React and NodeJS. My
+              focus lies in developing clean, scalable applications to deliver
+              superior performance and seamless user experiences.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <h3>Developer</h3>
+                <p>
+                  I enjoy bringing ideas to life through clean and efficient
+                  code.
+                </p>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-palette"></i>
+                <h3>Designer</h3>
+                <p>
+                  I value simple, clean design patterns and thoughtful
+                  interactions.
+                </p>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Problem Solver</h3>
+                <p>
+                  I thrive on finding elegant solutions to complex challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+
+            <div class="skills-category">
+              <h4>Frontend</h4>
+              <div class="skills-container">
+                <span class="skill-tag">ReactJS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Material-UI</span>
+                <span class="skill-tag">Semantic-UI</span>
+                <span class="skill-tag">Chakra-UI</span>
+                <span class="skill-tag">React Native</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h4>Backend</h4>
+              <div class="skills-container">
+                <span class="skill-tag">NodeJS</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">EJS</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h4>DevOps & Tools</h4>
+              <div class="skills-container">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Git/Bit Bucket</span>
+                <span class="skill-tag">Jira</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h4>Testing</h4>
+              <div class="skills-container">
+                <span class="skill-tag">Unit Testing</span>
+                <span class="skill-tag">React Testing Library</span>
+                <span class="skill-tag">Jest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/hmu.jpg"
+                alt="HMU Social Application"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>HMU - Social Application</h3>
+              <p>
+                A real-time chatting application that enables users to connect
+                and communicate instantly. Features include:
+              </p>
+              <ul>
+                <li>
+                  Real-time messaging using Socket.IO for instant communication
+                </li>
+                <li>
+                  User authentication and profile management with secure JWT
+                  tokens
+                </li>
+                <li>
+                  Group chat functionality with admin controls and member
+                  management
+                </li>
+                <li>
+                  Message history and search with advanced filtering options
+                </li>
+                <li>
+                  Responsive design for all devices with Material UI components
+                </li>
+                <li>Dockerized deployment for easy scaling and maintenance</li>
+                <li>
+                  MongoDB database for efficient data storage and retrieval
+                </li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/repairdesk.jpg"
+                alt="RepairDesk Mobile App"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>RepairDesk Mobile App</h3>
+              <p>
+                A comprehensive mobile solution for repair businesses,
+                featuring:
+              </p>
+              <ul>
+                <li>
+                  Ticket creation and management with customizable templates
+                </li>
+                <li>
+                  Customer information tracking with detailed history and notes
+                </li>
+                <li>
+                  Inventory management with real-time stock updates and alerts
+                </li>
+                <li>
+                  Invoice generation with multiple payment options and tax
+                  calculations
+                </li>
+                <li>
+                  Offline functionality for uninterrupted service in
+                  low-connectivity areas
+                </li>
+                <li>Push notifications for important updates and reminders</li>
+                <li>Analytics dashboard for business performance tracking</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rdmobile.aaa"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/calendar.jpg"
+                alt="Appointment Calendar"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Appointment Calendar</h3>
+              <p>A sophisticated scheduling system with advanced features:</p>
+              <ul>
+                <li>
+                  Multi-store support with individual branding and settings
+                </li>
+                <li>Automated appointment reminders via email and SMS</li>
+                <li>Staff availability management with conflict detection</li>
+                <li>Customizable service durations and pricing options</li>
+                <li>
+                  Integration with popular calendar services (Google, Outlook)
+                </li>
+                <li>Advanced reporting and analytics dashboard</li>
+                <li>Customer feedback and rating system</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <a
+                href="http://appowebwidget.com2.s3-website-us-east-1.amazonaws.com/schedule/MTAzMzM=/search#multiStore=yes,primary=f2ba31,secondary=262626"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/imerza.jpg"
+                alt="Imerza Real Estate"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Imerza Real Estate Platform</h3>
+              <p>
+                A comprehensive real estate management platform with advanced
+                features:
+              </p>
+              <ul>
+                <li>
+                  Property listing and management system with detailed
+                  categorization
+                </li>
+                <li>
+                  Broker dashboard for property analytics and performance
+                  tracking
+                </li>
+                <li>
+                  Advanced search and filtering functionality with map
+                  integration
+                </li>
+                <li>Property comparison and virtual tour features</li>
+                <li>
+                  Automated email notifications for new listings and updates
+                </li>
+                <li>
+                  Secure document management system for property documents
+                </li>
+                <li>Mobile-responsive design for on-the-go access</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/suits.jpg"
+                alt="Home of Custom Suits"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Home of Custom Suits</h3>
+              <p>A fully customized e-commerce platform for bespoke suits:</p>
+              <ul>
+                <li>Custom suit design interface with 3D preview</li>
+                <li>Fabric selection and customization options</li>
+                <li>Measurement management system with size recommendations</li>
+                <li>Order tracking and status updates</li>
+                <li>Secure payment processing with multiple payment options</li>
+                <li>Customer account management with order history</li>
+                <li>Admin dashboard for order and inventory management</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">Payment Gateway</span>
+              </div>
+              <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/pucit.jpg"
+                alt="PUCIT Job Portal"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3>PUCIT Job Portal</h3>
+              <p>
+                An automated platform for connecting PUCIT graduates with
+                employers:
+              </p>
+              <ul>
+                <li>Student profile management with academic records</li>
+                <li>Job posting and application system</li>
+                <li>Automated matching algorithm for job recommendations</li>
+                <li>Resume builder and portfolio showcase</li>
+                <li>
+                  Employer dashboard for job posting and candidate management
+                </li>
+                <li>Interview scheduling and feedback system</li>
+                <li>Analytics dashboard for placement statistics</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Software Engineer</h3>
+            <h4>GoSaaS</h4>
+            <p class="date">10/2022 - Present</p>
+            <div class="experience-content">
+              <div class="key-projects">
+                <h3 class="section-subtitle">Key Projects</h3>
+                <div class="project">
+                  <h4 class="project-title">Employee Training System (ETS)</h4>
+                  <p class="project-description">
+                    A comprehensive platform for tracking and managing employee
+                    training programs
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Designed and implemented a scalable architecture using
+                      React.js and Material UI
+                    </li>
+                    <li>
+                      Developed RESTful APIs using Node.js and Express for
+                      backend services
+                    </li>
+                    <li>
+                      Containerized the application using Docker for consistent
+                      deployment
+                    </li>
+                    <li>
+                      Implemented role-based access control and secure
+                      authentication
+                    </li>
+                    <li>
+                      Integrated real-time notifications for training updates
+                      and deadlines
+                    </li>
+                  </ul>
+                </div>
+                <div class="project">
+                  <h4 class="project-title">Intel SPEED</h4>
+                  <p class="project-description">
+                    Led the redevelopment of critical legacy modules for Intel's
+                    SPEED Application
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Managed a team of 5 developers, coordinating tasks and
+                      ensuring code quality
+                    </li>
+                    <li>Analyzed and reviewed legacy SPEED codebase</li>
+                    <li>
+                      Designed and developed modern replacements using React for
+                      frontend and .NET for backend services
+                    </li>
+                    <li>
+                      Optimized database performance through efficient stored
+                      procedure implementation
+                    </li>
+                    <li>
+                      Created detailed documentation for new systems and
+                      migration processes
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="responsibilities">
+                <h3 class="section-subtitle">Key Responsibilities</h3>
+                <ul class="responsibility-list">
+                  <li>
+                    <strong>Led modern development practices:</strong>
+                    <ul>
+                      <li>
+                        Introduced CI/CD pipelines for automated testing and
+                        deployment
+                      </li>
+                      <li>
+                        Implemented comprehensive unit and integration testing
+                      </li>
+                      <li>
+                        Established code review processes and documentation
+                        standards
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Cross-functional collaboration:</strong>
+                    <ul>
+                      <li>
+                        Worked closely with UI/UX designers to implement
+                        responsive interfaces
+                      </li>
+                      <li>
+                        Coordinated with QA teams to ensure high-quality
+                        deliverables
+                      </li>
+                      <li>
+                        Mentored junior developers and conducted
+                        knowledge-sharing sessions
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <h3>Software Engineer</h3>
+            <h4>FiveRivers Technologies</h4>
+            <p class="date">12/2020 - 10/2022</p>
+            <div class="experience-content">
+              <div class="key-projects">
+                <h3 class="section-subtitle">Key Projects</h3>
+                <div class="project">
+                  <h4 class="project-title">ML-Studio</h4>
+                  <p class="project-description">
+                    An AI-powered defect detection system
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Created interactive dashboards for visualizing system
+                      health metrics
+                    </li>
+                    <li>
+                      Implemented automated alerting system for early defect
+                      detection
+                    </li>
+                    <li>
+                      Integrated with existing monitoring systems for
+                      comprehensive coverage
+                    </li>
+                  </ul>
+                </div>
+                <div class="project">
+                  <h4 class="project-title">Core UI Components Library</h4>
+                  <p class="project-description">
+                    A reusable component library for consistent UX across
+                    applications
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Designed and implemented a component library using React
+                      and TypeScript
+                    </li>
+                    <li>
+                      Ensured accessibility compliance and responsive design
+                    </li>
+                    <li>
+                      Created comprehensive documentation and usage examples
+                    </li>
+                    <li>
+                      Integrated with React Testing Library for robust testing
+                    </li>
+                  </ul>
+                </div>
+                <div class="project">
+                  <h4 class="project-title">Core UI Scripts</h4>
+                  <p class="project-description">
+                    Automation scripts for development workflow optimization
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Developed automated scripts for dependency management and
+                      version control
+                    </li>
+                    <li>Created copyright management system for codebase</li>
+                    <li>
+                      Implemented post-checkout hooks for environment setup
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="responsibilities">
+                <h3 class="section-subtitle">Key Responsibilities</h3>
+                <ul class="responsibility-list">
+                  <li>
+                    <strong>Technical leadership</strong> for front-end
+                    development across multiple projects
+                  </li>
+                  <li>
+                    <strong>Code review and quality assurance</strong> for team
+                    deliverables
+                  </li>
+                  <li>
+                    <strong>Performance optimization</strong> for critical
+                    application components
+                  </li>
+                  <li>
+                    <strong>Documentation and knowledge sharing</strong> for
+                    team standards
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <h3>MERN Stack Developer</h3>
+            <h4>RepairDesk</h4>
+            <p class="date">04/2019 - 12/2020</p>
+            <div class="experience-content">
+              <div class="key-projects">
+                <h3 class="section-subtitle">Key Projects</h3>
+                <div class="project">
+                  <h4 class="project-title">RepairDesk Mobile App</h4>
+                  <p class="project-description">
+                    A comprehensive mobile solution for repair businesses
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Built a cross-platform mobile application using React
+                      Native
+                    </li>
+                    <li>
+                      Implemented real-time ticket management and status updates
+                    </li>
+                    <li>
+                      Created offline-first functionality for uninterrupted
+                      service
+                    </li>
+                    <li>Integrated with existing backend services and APIs</li>
+                    <li>
+                      Developed push notification system for important alerts
+                    </li>
+                  </ul>
+                </div>
+                <div class="project">
+                  <h4 class="project-title">Appointment Calendar System</h4>
+                  <p class="project-description">
+                    A multi-store scheduling solution for service businesses
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Developed a customizable scheduling solution using
+                      Material-UI
+                    </li>
+                    <li>
+                      Implemented multi-store support with unique branding
+                      options
+                    </li>
+                    <li>
+                      Created automated notification system for appointments
+                    </li>
+                    <li>
+                      Integrated with third-party calendar services (Google,
+                      Outlook)
+                    </li>
+                    <li>
+                      Built analytics dashboard for appointment tracking and
+                      reporting
+                    </li>
+                  </ul>
+                </div>
+                <div class="project">
+                  <h4 class="project-title">Imerza Real Estate Platform</h4>
+                  <p class="project-description">
+                    A property management system for real estate brokers
+                  </p>
+                  <ul class="project-details">
+                    <li>
+                      Developed property listing and management system with
+                      detailed categorization
+                    </li>
+                    <li>
+                      Created broker dashboard for property analytics and
+                      performance tracking
+                    </li>
+                    <li>
+                      Implemented search and filtering functionality with map
+                      integration
+                    </li>
+                    <li>
+                      Built document management system for property
+                      documentation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="responsibilities">
+                <h3 class="section-subtitle">Key Responsibilities</h3>
+                <ul class="responsibility-list">
+                  <li>
+                    <strong>Full-stack development</strong> using MERN (MongoDB,
+                    Express, React, Node.js)
+                  </li>
+                  <li>
+                    <strong>API design and integration</strong> with third-party
+                    services
+                  </li>
+                  <li>
+                    <strong>Performance optimization</strong> for both web and
+                    mobile applications
+                  </li>
+                  <li>
+                    <strong>User experience improvement</strong> and UI
+                    implementation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education & Certifications</h2>
+        <div class="education-content">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+              <h4>Punjab University</h4>
+              <p class="date">2014 - 2018</p>
+              <div class="education-description">
+                <p>
+                  Completed a comprehensive computer science program with focus
+                  on software development, data structures, algorithms, and
+                  database systems.
+                </p>
+                <ul class="education-highlights">
+                  <li>
+                    Core courses in Object-Oriented Programming, Web
+                    Development, and Database Design
+                  </li>
+                  <li>
+                    Advanced coursework in Software Engineering and System
+                    Architecture
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <div class="certifications-container">
+            <h3 class="certifications-title">Professional Certifications</h3>
+            <p class="certification-note">
+              I am constantly learning and adding new certifications. Check back
+              soon for updates on my latest professional development
+              achievements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <h2>What People Say</h2>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                Majid is an extremely capable and independent engineer. I worked
+                directly with Majid on a complex distributed machine learning
+                application, where he was invaluable as a frontend engineer. I
+                was able to confidently trust Majid to produce excellent results
+                even when given vague acceptance criteria. Any team would be
+                very lucky to have him.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>James M. Loy</h4>
+                <p>Engineering Manager, SparkCognition</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                I had the pleasure of working with Majid Hussain a couple of
+                years ago on a challenging software development project for a
+                well-known company in the market. The project started from
+                scratch and required a lot of effort and dedication from the
+                team. Despite the challenges, Majid's work was impeccable and he
+                proved to be a very responsible and organized person, always
+                willing to do what was asked of him and completed tasks in a
+                short period of time.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>Jennifer Castro</h4>
+                <p>Quality Assurance Lead, SparkCognition</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                Majid is an excellent React developer, his problem solving
+                abilities second to none. He structures his code well, that
+                helps apps to scale. By working smart, he is able to meet tight
+                deadlines. A valuable addition to any organization working with
+                a React based stack.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>Zaeem Malik</h4>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linkedin-recommendation">
+          <p>View more recommendations on my LinkedIn profile</p>
+          <a
+            href="https://www.linkedin.com/in/majidhussainmk/details/recommendations/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outlined"
+          >
+            <i class="fab fa-linkedin-in"></i> LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/majidhussainmk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link linkedin"
+            >
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="mailto:majid.hussain.mk@gmail.com"
+              class="social-link email"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+923214148818</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Lahore, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="current-year">2024</span> Majid Hussain. All rights
+          reserved.
+        </p>
+        <a href="#home" class="back-to-top">Back to Top</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/filters.js"></script>
+  </body>
+</html>

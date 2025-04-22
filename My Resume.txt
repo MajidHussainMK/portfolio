@@ -1,0 +1,117 @@
+Majid Hussain
+
+
+majid.hussain.mk@gmail.com
+03214148818
+Lahore, Pakistan
+https://www.linkedin.com/in/majidhussainmk/
+
+
+
+------------------------
+MERN Stack Developer
+
+
+------------------------
+I am an accomplished Software Engineer with 5 years of expertise in application development, specializing in React and NodeJS. My focus lies in developing clean, scalable applications to deliver superior performance and seamless user experiences.
+
+
+Work Experience
+------------------------
+Software Engineer
+GoSaaS
+10/2022 - Present
+Achievements/Tasks
+- Led the development of <b>ETS</b>, a centralized platform for tracking and recording employee training within the organization. 
+- Developed the frontend using ReactJS and Material UI. 
+- Collaborated with UI/UX designers to creates seamless user experiences and ensure technical feasibility. 
+- Implemented backend functionalities using NodeJS and   <b>Dockerized</b>   the application for seamless deployment and scalability. 
+- Troubleshot and debugged issues to enhance application functionality and user experience. 
+- Took on a leadership role within the team, providing guidance and direction to team members to achieve project milestones and objectives. 
+x-t-c1-color: Majid Zulfiqar - majid@gosaas.io
+
+
+Software Engineer
+FiveRivers Technologies
+12/2020 - 10/2022
+Achievements/Tasks
+- <b>ML-Studio </b>  - An AI based solution - that allows companies to see defects that might arise early in their system based on previous trainings and data available 
+- <b>Core UI Components </b>  - Common React components based on the design system built using ReactJS, Typescript & RTL 
+- <b>Core UI Scripts </b>  - This is similar to, and takes inspiration from, the react-scripts dependency of Create React App. Contributed to multiple scripts such as copyrights, post-checkout, dependency count, bulk-dependency count etc 
+- <b>Tinker Toy </b>  - A companion library to MUI for presenting SparkCognition Tinkery Toy design system 
+x-t-c1-color: Greg Fagan - gregfagan@gmail.com
+
+
+Mern Stack Developer
+RepairDesk
+04/2019 - 12/2020
+Achievements/Tasks
+- <b>RepairDesk</b>   - Developed a native mobile app in React Native. It includes a dashboard, invoicing and creation of ticket.https://play.google.com/store/apps/details?id=com.rdmobile.aaa&amp;hl=en 
+- <b>Appointment Calendar</b> - Developed a user friendly, cost and time eﬀective Appointment Calendar using Material-UI.http://appowebwidget.com2.s3-website-us-east-1.amazonaws.com/schedule/MTAzMzM=/search#multiStore=yes,primary=f2ba31,secondary=262626 
+- <b>Imerza -</b>   Developed Web application where user can add properties(Real Estate), and than a Broker gives overview of listed properties 
+x-t-c1-color: Tauqeer Nasir - tauqeer.insta@gmail.com
+
+
+
+
+
+Skills
+------------------------
+-ReactJs
+-NodeJs
+-Javascript
+-Docker
+-Typescript
+-CI/CD
+-Git/Bit Bucket
+-Material-UI
+-Semantic-UI
+-Chakra-UI
+-MongoDB
+-React Native
+-Unit Testing
+-React Testing Library
+-Jest
+-Jira
+-EJS
+
+
+
+Personal Projects
+------------------------
+HMU - Social Application
+01/2024 - Present
+- Developed a real-time chatting application using React.js and Material UI for the frontend. 
+- Implemented backend functionalities using NodeJS and Express framework to handle HTTP requests and Socket.io for real-time communication. 
+- Utilized MongoDB as the database to store chat messages and user data. 
+- Dockerized the application to ensure consistency and portability across different environments. 
+- Technology Stack: ReactJS, NodeJS, Express, MongoDB, Socket.IO. 
+
+
+Internship UniBit Solutions
+01/2019 - 04/2019
+- <b>Home of Custom Suits</b>   - A Fully Customized SPA developed using ReactJs, NodeJs, MongoDB, Express 
+
+
+PUCIT Job Portal - FYP
+01/2018 - 09/2018
+- An automated website for hiring graduate students of PUCIT, developed using React(frontend) and NodeJs(backend). 
+
+
+
+
+
+Languages
+------------------------
+-English- (60/100)
+-Urdu- (80/100)
+
+
+
+Interests
+------------------------
+-Cricket
+-Foosball
+
+
+
