@@ -88,4 +88,33 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".section").forEach((section) => {
     observer.observe(section);
   });
+
+  // Theme Toggle Functionality
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+  const themeIcon = themeToggle.querySelector("i");
+  const themeText = themeToggle.querySelector("span");
+
+  // Check for saved theme in localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-mode");
+    themeIcon.className = "fas fa-sun";
+    themeText.textContent = "Light";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Update icon and text
+    if (body.classList.contains("dark-mode")) {
+      themeIcon.className = "fas fa-sun";
+      themeText.textContent = "Light";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeIcon.className = "fas fa-moon";
+      themeText.textContent = "Dark";
+      localStorage.setItem("theme", "light");
+    }
+  });
 });

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Majid Hussain - MERN Stack Developer with 5+ years of experience in ReactJS, NodeJS, and modern web technologies. Portfolio showcasing projects and professional experience."
+      content="Majid Hussain - MERN Stack Developer with modern web development expertise"
     />
     <meta
       name="keywords"
-      content="Majid Hussain, portfolio, MERN stack, React, Node.js, JavaScript, TypeScript, Software Engineer, Web Developer, Full Stack Developer, ReactJS, MongoDB, ExpressJS"
+      content="Majid Hussain, MERN stack, React, Node.js, JavaScript, Portfolio"
     />
     <meta name="author" content="Majid Hussain" />
 
@@ -22,7 +22,7 @@
     />
     <meta
       property="og:description"
-      content="Professional portfolio showcasing my skills, projects, and 5+ years of experience in web development using React, Node.js, and modern technologies."
+      content="Modern portfolio showcasing expertise in React, Node.js, and full-stack development"
     />
     <meta property="og:image" content="assets/images/profile.jpeg" />
 
@@ -35,496 +35,612 @@
     />
     <meta
       property="twitter:description"
-      content="Professional portfolio showcasing my skills, projects, and experience as a MERN Stack Developer."
+      content="Modern portfolio showcasing expertise in React, Node.js, and full-stack development"
     />
     <meta property="twitter:image" content="assets/images/profile.jpeg" />
 
-    <title>Majid Hussain - MERN Stack Developer Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome for icons -->
+    <title>Majid Hussain - MERN Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="assets/images/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="assets/images/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">MH</div>
-        <button class="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="nav-download">
-            <a
-              href="assets/files/Majid_Hussain_Resume.pdf"
-              download
-              onclick="trackDownload && trackDownload('Majid_Hussain_Resume.pdf')"
-              ><i class="fas fa-download"></i> Resume</a
-            >
-          </li>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+
+    <!-- Header -->
+    <header class="header glass-card" data-aos="fade-down">
+      <nav class="nav">
+        <div class="nav-logo">
+          <span class="logo-text">MH</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-
-    <!-- Home/Landing Section -->
-    <section id="home" class="section">
-      <div class="container home-container">
-        <div class="profile-info">
-          <h1>Majid Hussain</h1>
-          <p class="tagline">MERN Stack Developer</p>
-          <p class="brief-intro">
-            I build modern, responsive web applications with focus on clean code
-            and exceptional user experience.
-          </p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn btn-outlined">Contact Me</a>
-          </div>
-          <div class="profile-links">
-            <a
-              href="https://github.com/majidhussainmk"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="profile-link"
-            >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a
-              href="assets/files/Majid_Hussain_Resume.pdf"
-              download
-              onclick="trackDownload && trackDownload('Majid_Hussain_Resume.pdf')"
-              class="profile-link"
-            >
-              <i class="fas fa-file-download"></i> Download Resume
-            </a>
-          </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="profile-image">
-          <img src="assets/images/profile.jpeg" alt="Majid Hussain" />
-        </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section section-alt">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <div class="bio">
-            <p class="lead-text">
-              I am an accomplished Software Engineer with 5 years of expertise
-              in application development, specializing in React and NodeJS. My
-              focus lies in developing clean, scalable applications to deliver
-              superior performance and seamless user experiences.
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="hero-name">Majid Hussain</h1>
+            <h2 class="hero-title">MERN Stack Developer</h2>
+            <p class="hero-bio">
+              Crafting exceptional digital experiences with modern web
+              technologies. Passionate about clean code, innovative solutions,
+              and bringing ideas to life.
             </p>
-            <div class="about-highlights">
-              <div class="highlight-item">
-                <i class="fas fa-code"></i>
-                <h3>Developer</h3>
-                <p>
-                  I enjoy bringing ideas to life through clean and efficient
-                  code.
-                </p>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-palette"></i>
-                <h3>Designer</h3>
-                <p>
-                  I value simple, clean design patterns and thoughtful
-                  interactions.
-                </p>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-lightbulb"></i>
-                <h3>Problem Solver</h3>
-                <p>
-                  I thrive on finding elegant solutions to complex challenges.
-                </p>
-              </div>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              <a
+                href="assets/files/Majid_Hussain_Resume.pdf"
+                download
+                class="btn btn-secondary"
+                onclick="if(window.trackDownload) trackDownload('Majid_Hussain_Resume.pdf')"
+              >
+                <i class="fas fa-download"></i>
+                Resume
+              </a>
             </div>
           </div>
-          <div class="skills">
-            <h3>Skills</h3>
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+            <div class="profile-card glass-card">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Majid Hussain"
+                class="profile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="skills-category">
-              <h4>Frontend</h4>
-              <div class="skills-container">
-                <span class="skill-tag">ReactJS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">Material-UI</span>
-                <span class="skill-tag">Semantic-UI</span>
-                <span class="skill-tag">Chakra-UI</span>
-                <span class="skill-tag">React Native</span>
+      <!-- About & Skills Section (Bento Grid) -->
+      <section id="about" class="about-skills">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">About & Skills</h2>
+          <div class="bento-grid">
+            <!-- Large About Card -->
+            <div
+              class="bento-item large glass-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3>About Me</h3>
+              <p>
+                I am an accomplished Software Engineer with 5 years of expertise
+                in application development, specializing in React and NodeJS. My
+                focus lies in developing clean, scalable applications to deliver
+                superior performance and seamless user experiences.
+              </p>
+              <p>
+                My journey has taken me through various industries and
+                challenging projects, from AI-based defect detection systems to
+                real-time chat applications, always pushing the boundaries of
+                what's possible with modern web technologies.
+              </p>
+              <div class="stats">
+                <div class="stat">
+                  <span class="stat-number">15+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Years</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Satisfaction</span>
+                </div>
               </div>
             </div>
 
-            <div class="skills-category">
-              <h4>Backend</h4>
-              <div class="skills-container">
-                <span class="skill-tag">NodeJS</span>
-                <span class="skill-tag">Express</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">EJS</span>
+            <!-- Skill Cards -->
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <i class="devicon-react-original colored skill-icon"></i>
+              <span class="skill-name">React</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <i class="devicon-nodejs-plain colored skill-icon"></i>
+              <span class="skill-name">Node.js</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <i class="devicon-mongodb-plain colored skill-icon"></i>
+              <span class="skill-name">MongoDB</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <i class="devicon-javascript-plain colored skill-icon"></i>
+              <span class="skill-name">JavaScript</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <i class="devicon-typescript-plain colored skill-icon"></i>
+              <span class="skill-name">TypeScript</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
+              <i class="devicon-express-original colored skill-icon"></i>
+              <span class="skill-name">Express</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <i class="devicon-docker-plain colored skill-icon"></i>
+              <span class="skill-name">Docker</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="550"
+            >
+              <i class="devicon-materialui-plain colored skill-icon"></i>
+              <span class="skill-name">Material-UI</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <i class="devicon-react-original colored skill-icon"></i>
+              <span class="skill-name">React Native</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="650"
+            >
+              <i class="devicon-jest-plain colored skill-icon"></i>
+              <span class="skill-name">Jest</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <i class="devicon-git-plain colored skill-icon"></i>
+              <span class="skill-name">Git</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="750"
+            >
+              <i class="devicon-mysql-plain colored skill-icon"></i>
+              <span class="skill-name">SQL</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <i class="fas fa-code skill-icon" style="color: #06b6d4"></i>
+              <span class="skill-name">REST APIs</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="850"
+            >
+              <i class="fas fa-vial skill-icon" style="color: #06b6d4"></i>
+              <span class="skill-name">Testing</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <i class="fas fa-tasks skill-icon" style="color: #06b6d4"></i>
+              <span class="skill-name">Jira</span>
+            </div>
+
+            <div
+              class="bento-item skill-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="950"
+            >
+              <i class="fas fa-sync-alt skill-icon" style="color: #06b6d4"></i>
+              <span class="skill-name">CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+          <div class="projects-grid">
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-comments"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">HMU - Social Application</h3>
+                <p class="project-description">
+                  A real-time chatting application with instant messaging
+                  capabilities. Features real-time communication, user
+                  authentication, and message history with a modern, responsive
+                  interface.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Socket.IO</span>
+                  <span class="tag">Material-UI</span>
+                  <span class="tag">Docker</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('HMU - Social Application')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('HMU - Social Application')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="skills-category">
-              <h4>DevOps & Tools</h4>
-              <div class="skills-container">
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">Git/Bit Bucket</span>
-                <span class="skill-tag">Jira</span>
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">RepairDesk Mobile App</h3>
+                <p class="project-description">
+                  A comprehensive mobile solution for repair businesses
+                  featuring dashboard, invoicing, and ticket creation. Built
+                  with React Native for cross-platform compatibility.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Material-UI</span>
+                  <span class="tag">Redux</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('RepairDesk Mobile App')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.rdmobile.aaa"
+                    target="_blank"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('RepairDesk Mobile App')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Play Store
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="skills-category">
-              <h4>Testing</h4>
-              <div class="skills-container">
-                <span class="skill-tag">Unit Testing</span>
-                <span class="skill-tag">React Testing Library</span>
-                <span class="skill-tag">Jest</span>
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Appointment Calendar System</h3>
+                <p class="project-description">
+                  A user-friendly, cost and time effective appointment calendar
+                  system with multi-store support and customizable scheduling
+                  features.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Material-UI</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Node.js</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Appointment Calendar System')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="http://appowebwidget.com2.s3-website-us-east-1.amazonaws.com/schedule/MTAzMzM=/search#multiStore=yes,primary=f2ba31,secondary=262626"
+                    target="_blank"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Appointment Calendar System')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-home"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Imerza Real Estate Platform</h3>
+                <p class="project-description">
+                  A comprehensive web application where users can add properties
+                  and brokers can provide overviews of listed real estate
+                  properties.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Express</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Imerza Real Estate Platform')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Imerza Real Estate Platform')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Home of Custom Suits</h3>
+                <p class="project-description">
+                  A fully customized Single Page Application (SPA) for custom
+                  suit ordering with personalization features and e-commerce
+                  functionality.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Express</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Home of Custom Suits')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('Home of Custom Suits')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">PUCIT Job Portal</h3>
+                <p class="project-description">
+                  An automated website for hiring graduate students of PUCIT.
+                  Final Year Project featuring job matching and recruitment
+                  management.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Express</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('PUCIT Job Portal')"
+                  >
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    onclick="if(window.trackProjectView) trackProjectView('PUCIT Job Portal')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-filter">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web Development</button>
-          <button class="filter-btn" data-filter="mobile">Mobile</button>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/hmu.jpg"
-                alt="HMU Social Application"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>HMU - Social Application</h3>
-              <p>
-                A real-time chatting application that enables users to connect
-                and communicate instantly. Features include:
-              </p>
-              <ul>
-                <li>
-                  Real-time messaging using Socket.IO for instant communication
-                </li>
-                <li>
-                  User authentication and profile management with secure JWT
-                  tokens
-                </li>
-                <li>
-                  Group chat functionality with admin controls and member
-                  management
-                </li>
-                <li>
-                  Message history and search with advanced filtering options
-                </li>
-                <li>
-                  Responsive design for all devices with Material UI components
-                </li>
-                <li>Dockerized deployment for easy scaling and maintenance</li>
-                <li>
-                  MongoDB database for efficient data storage and retrieval
-                </li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Socket.IO</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">Docker</span>
-              </div>
-              <a
-                href="#"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('HMU Social Application')"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/repairdesk.jpg"
-                alt="RepairDesk Mobile App"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>RepairDesk Mobile App</h3>
-              <p>
-                A comprehensive mobile solution for repair businesses,
-                featuring:
-              </p>
-              <ul>
-                <li>
-                  Ticket creation and management with customizable templates
-                </li>
-                <li>
-                  Customer information tracking with detailed history and notes
-                </li>
-                <li>
-                  Inventory management with real-time stock updates and alerts
-                </li>
-                <li>
-                  Invoice generation with multiple payment options and tax
-                  calculations
-                </li>
-                <li>
-                  Offline functionality for uninterrupted service in
-                  low-connectivity areas
-                </li>
-                <li>Push notifications for important updates and reminders</li>
-                <li>Analytics dashboard for business performance tracking</li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">React Native</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">Redux</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">REST APIs</span>
-              </div>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.rdmobile.aaa"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('RepairDesk Mobile App')"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/calendar.jpg"
-                alt="Appointment Calendar"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Appointment Calendar</h3>
-              <p>A sophisticated scheduling system with advanced features:</p>
-              <ul>
-                <li>
-                  Multi-store support with individual branding and settings
-                </li>
-                <li>Automated appointment reminders via email and SMS</li>
-                <li>Staff availability management with conflict detection</li>
-                <li>Customizable service durations and pricing options</li>
-                <li>
-                  Integration with popular calendar services (Google, Outlook)
-                </li>
-                <li>Advanced reporting and analytics dashboard</li>
-                <li>Customer feedback and rating system</li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">REST APIs</span>
-              </div>
-              <a
-                href="http://appowebwidget.com2.s3-website-us-east-1.amazonaws.com/schedule/MTAzMzM=/search#multiStore=yes,primary=f2ba31,secondary=262626"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('Appointment Calendar')"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/imerza.jpg"
-                alt="Imerza Real Estate"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Imerza Real Estate Platform</h3>
-              <p>
-                A comprehensive real estate management platform with advanced
-                features:
-              </p>
-              <ul>
-                <li>
-                  Property listing and management system with detailed
-                  categorization
-                </li>
-                <li>
-                  Broker dashboard for property analytics and performance
-                  tracking
-                </li>
-                <li>
-                  Advanced search and filtering functionality with map
-                  integration
-                </li>
-                <li>Property comparison and virtual tour features</li>
-                <li>
-                  Automated email notifications for new listings and updates
-                </li>
-                <li>
-                  Secure document management system for property documents
-                </li>
-                <li>Mobile-responsive design for on-the-go access</li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">Google Maps API</span>
-                <span class="tech-tag">REST APIs</span>
-              </div>
-              <a
-                href="#"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('Imerza Real Estate Platform')"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/suits.jpg"
-                alt="Home of Custom Suits"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Home of Custom Suits</h3>
-              <p>A fully customized e-commerce platform for bespoke suits:</p>
-              <ul>
-                <li>Custom suit design interface with 3D preview</li>
-                <li>Fabric selection and customization options</li>
-                <li>Measurement management system with size recommendations</li>
-                <li>Order tracking and status updates</li>
-                <li>Secure payment processing with multiple payment options</li>
-                <li>Customer account management with order history</li>
-                <li>Admin dashboard for order and inventory management</li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">Payment Gateway</span>
-              </div>
-              <a
-                href="#"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('Home of Custom Suits')"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/pucit.jpg"
-                alt="PUCIT Job Portal"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-content">
-              <h3>PUCIT Job Portal</h3>
-              <p>
-                An automated platform for connecting PUCIT graduates with
-                employers:
-              </p>
-              <ul>
-                <li>Student profile management with academic records</li>
-                <li>Job posting and application system</li>
-                <li>Automated matching algorithm for job recommendations</li>
-                <li>Resume builder and portfolio showcase</li>
-                <li>
-                  Employer dashboard for job posting and candidate management
-                </li>
-                <li>Interview scheduling and feedback system</li>
-                <li>Analytics dashboard for placement statistics</li>
-              </ul>
-              <div class="technologies">
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">Material UI</span>
-                <span class="tech-tag">REST APIs</span>
-              </div>
-              <a
-                href="#"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackProjectView && trackProjectView('PUCIT Job Portal')"
-                >View Project</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-line"></div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Software Engineer</h3>
-            <h4>GoSaaS</h4>
-            <p class="date">10/2022 - Present</p>
-            <div class="experience-content">
-              <div class="key-projects">
-                <h3 class="section-subtitle">Key Projects</h3>
-                <div class="project">
-                  <h4 class="project-title">Employee Training System (ETS)</h4>
-                  <p class="project-description">
+            <div
+              class="timeline-item"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">October 2022 - Present</div>
+                <h3 class="timeline-title">Software Engineer</h3>
+                <h4 class="timeline-company">GoSaaS</h4>
+
+                <div class="experience-project">
+                  <h5 class="project-name">Employee Training System (ETS)</h5>
+                  <p class="project-subtitle">
                     A comprehensive platform for tracking and managing employee
                     training programs
                   </p>
@@ -551,9 +667,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="project">
-                  <h4 class="project-title">Intel SPEED</h4>
-                  <p class="project-description">
+
+                <div class="experience-project">
+                  <h5 class="project-name">Intel SPEED</h5>
+                  <p class="project-subtitle">
                     Led the redevelopment of critical legacy modules for Intel's
                     SPEED Application
                   </p>
@@ -577,57 +694,49 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="responsibilities">
-                <h3 class="section-subtitle">Key Responsibilities</h3>
-                <ul class="responsibility-list">
-                  <li>
-                    <strong>Led modern development practices:</strong>
-                    <ul>
-                      <li>
-                        Introduced CI/CD pipelines for automated testing and
-                        deployment
-                      </li>
-                      <li>
-                        Implemented comprehensive unit and integration testing
-                      </li>
-                      <li>
-                        Established code review processes and documentation
-                        standards
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Cross-functional collaboration:</strong>
-                    <ul>
-                      <li>
-                        Worked closely with UI/UX designers to implement
-                        responsive interfaces
-                      </li>
-                      <li>
-                        Coordinated with QA teams to ensure high-quality
-                        deliverables
-                      </li>
-                      <li>
-                        Mentored junior developers and conducted
-                        knowledge-sharing sessions
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+
+                <div class="key-responsibilities">
+                  <h5>Key Responsibilities</h5>
+                  <ul>
+                    <li>
+                      <strong>Led modern development practices:</strong>
+                      Introduced CI/CD pipelines, comprehensive testing, and
+                      code review processes
+                    </li>
+                    <li>
+                      <strong>Cross-functional collaboration:</strong> Worked
+                      with UI/UX designers, QA teams, and mentored junior
+                      developers
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="timeline-skills">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Material-UI</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">.NET</span>
+                  <span class="skill-tag">Leadership</span>
+                  <span class="skill-tag">CI/CD</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline-item">
-            <h3>Software Engineer</h3>
-            <h4>FiveRivers Technologies</h4>
-            <p class="date">12/2020 - 10/2022</p>
-            <div class="experience-content">
-              <div class="key-projects">
-                <h3 class="section-subtitle">Key Projects</h3>
-                <div class="project">
-                  <h4 class="project-title">ML-Studio</h4>
-                  <p class="project-description">
+
+            <div
+              class="timeline-item"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">December 2020 - October 2022</div>
+                <h3 class="timeline-title">Software Engineer</h3>
+                <h4 class="timeline-company">FiveRivers Technologies</h4>
+
+                <div class="experience-project">
+                  <h5 class="project-name">ML-Studio</h5>
+                  <p class="project-subtitle">
                     An AI-powered defect detection system
                   </p>
                   <ul class="project-details">
@@ -645,9 +754,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="project">
-                  <h4 class="project-title">Core UI Components Library</h4>
-                  <p class="project-description">
+
+                <div class="experience-project">
+                  <h5 class="project-name">Core UI Components Library</h5>
+                  <p class="project-subtitle">
                     A reusable component library for consistent UX across
                     applications
                   </p>
@@ -667,9 +777,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="project">
-                  <h4 class="project-title">Core UI Scripts</h4>
-                  <p class="project-description">
+
+                <div class="experience-project">
+                  <h5 class="project-name">Core UI Scripts</h5>
+                  <p class="project-subtitle">
                     Automation scripts for development workflow optimization
                   </p>
                   <ul class="project-details">
@@ -683,40 +794,52 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="responsibilities">
-                <h3 class="section-subtitle">Key Responsibilities</h3>
-                <ul class="responsibility-list">
-                  <li>
-                    <strong>Technical leadership</strong> for front-end
-                    development across multiple projects
-                  </li>
-                  <li>
-                    <strong>Code review and quality assurance</strong> for team
-                    deliverables
-                  </li>
-                  <li>
-                    <strong>Performance optimization</strong> for critical
-                    application components
-                  </li>
-                  <li>
-                    <strong>Documentation and knowledge sharing</strong> for
-                    team standards
-                  </li>
-                </ul>
+
+                <div class="key-responsibilities">
+                  <h5>Key Responsibilities</h5>
+                  <ul>
+                    <li>
+                      Technical leadership for front-end development across
+                      multiple projects
+                    </li>
+                    <li>
+                      Code review and quality assurance for team deliverables
+                    </li>
+                    <li>
+                      Performance optimization for critical application
+                      components
+                    </li>
+                    <li>
+                      Documentation and knowledge sharing for team standards
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="timeline-skills">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">Material-UI</span>
+                  <span class="skill-tag">AI/ML</span>
+                  <span class="skill-tag">Testing</span>
+                  <span class="skill-tag">Leadership</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline-item">
-            <h3>MERN Stack Developer</h3>
-            <h4>RepairDesk</h4>
-            <p class="date">04/2019 - 12/2020</p>
-            <div class="experience-content">
-              <div class="key-projects">
-                <h3 class="section-subtitle">Key Projects</h3>
-                <div class="project">
-                  <h4 class="project-title">RepairDesk Mobile App</h4>
-                  <p class="project-description">
+
+            <div
+              class="timeline-item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <div class="timeline-date">April 2019 - December 2020</div>
+                <h3 class="timeline-title">MERN Stack Developer</h3>
+                <h4 class="timeline-company">RepairDesk</h4>
+
+                <div class="experience-project">
+                  <h5 class="project-name">RepairDesk Mobile App</h5>
+                  <p class="project-subtitle">
                     A comprehensive mobile solution for repair businesses
                   </p>
                   <ul class="project-details">
@@ -737,9 +860,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="project">
-                  <h4 class="project-title">Appointment Calendar System</h4>
-                  <p class="project-description">
+
+                <div class="experience-project">
+                  <h5 class="project-name">Appointment Calendar System</h5>
+                  <p class="project-subtitle">
                     A multi-store scheduling solution for service businesses
                   </p>
                   <ul class="project-details">
@@ -764,9 +888,10 @@
                     </li>
                   </ul>
                 </div>
-                <div class="project">
-                  <h4 class="project-title">Imerza Real Estate Platform</h4>
-                  <p class="project-description">
+
+                <div class="experience-project">
+                  <h5 class="project-name">Imerza Real Estate Platform</h5>
+                  <p class="project-subtitle">
                     A property management system for real estate brokers
                   </p>
                   <ul class="project-details">
@@ -788,237 +913,445 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="responsibilities">
-                <h3 class="section-subtitle">Key Responsibilities</h3>
-                <ul class="responsibility-list">
-                  <li>
-                    <strong>Full-stack development</strong> using MERN (MongoDB,
-                    Express, React, Node.js)
-                  </li>
-                  <li>
-                    <strong>API design and integration</strong> with third-party
-                    services
-                  </li>
-                  <li>
-                    <strong>Performance optimization</strong> for both web and
-                    mobile applications
-                  </li>
-                  <li>
-                    <strong>User experience improvement</strong> and UI
-                    implementation
-                  </li>
-                </ul>
+
+                <div class="key-responsibilities">
+                  <h5>Key Responsibilities</h5>
+                  <ul>
+                    <li>
+                      Full-stack development using MERN (MongoDB, Express,
+                      React, Node.js)
+                    </li>
+                    <li>
+                      API design and integration with third-party services
+                    </li>
+                    <li>
+                      Performance optimization for both web and mobile
+                      applications
+                    </li>
+                    <li>User experience improvement and UI implementation</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-skills">
+                  <span class="skill-tag">React Native</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Material-UI</span>
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">Express</span>
+                  <span class="skill-tag">APIs</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education & Certifications</h2>
-        <div class="education-content">
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="education-details">
-              <h3>Bachelor of Science in Computer Science (BSCS)</h3>
-              <h4>Punjab University</h4>
-              <p class="date">2014 - 2018</p>
-              <div class="education-description">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">What People Say</h2>
+          <div class="testimonials-grid">
+            <div
+              class="testimonial-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="testimonial-content">
+                <i class="fas fa-quote-left quote-icon"></i>
                 <p>
-                  Completed a comprehensive computer science program with focus
-                  on software development, data structures, algorithms, and
-                  database systems.
+                  Majid is an extremely capable and independent engineer. I
+                  worked directly with Majid on a complex distributed machine
+                  learning application, where he was invaluable as a frontend
+                  engineer. I was able to confidently trust Majid to produce
+                  excellent results even when given vague acceptance criteria.
+                  Any team would be very lucky to have him.
                 </p>
-                <ul class="education-highlights">
-                  <li>
-                    Core courses in Object-Oriented Programming, Web
-                    Development, and Database Design
-                  </li>
-                  <li>
-                    Advanced coursework in Software Engineering and System
-                    Architecture
-                  </li>
-                </ul>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="testimonial-info">
+                  <h4>James M. Loy</h4>
+                  <p>Engineering Manager, SparkCognition</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="testimonial-content">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>
+                  I had the pleasure of working with Majid Hussain a couple of
+                  years ago on a challenging software development project for a
+                  well-known company in the market. The project started from
+                  scratch and required a lot of effort and dedication from the
+                  team. Despite the challenges, Majid's work was impeccable and
+                  he proved to be a very responsible and organized person,
+                  always willing to do what was asked of him and completed tasks
+                  in a short period of time.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="testimonial-info">
+                  <h4>Jennifer Castro</h4>
+                  <p>Quality Assurance Lead, SparkCognition</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-card glass-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="testimonial-content">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>
+                  Majid is an excellent React developer, his problem solving
+                  abilities second to none. He structures his code well, that
+                  helps apps to scale. By working smart, he is able to meet
+                  tight deadlines. A valuable addition to any organization
+                  working with a React based stack.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="testimonial-info">
+                  <h4>Zaeem Malik</h4>
+                  <p>Software Engineer</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="section-divider"></div>
-
-          <div class="certifications-container">
-            <h3 class="certifications-title">Professional Certifications</h3>
-            <p class="certification-note">
-              I am constantly learning and adding new certifications. Check back
-              soon for updates on my latest professional development
-              achievements.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section section-alt">
-      <div class="container">
-        <h2>What People Say</h2>
-        <div class="testimonials-container">
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left quote-icon"></i>
-              <p>
-                Majid is an extremely capable and independent engineer. I worked
-                directly with Majid on a complex distributed machine learning
-                application, where he was invaluable as a frontend engineer. I
-                was able to confidently trust Majid to produce excellent results
-                even when given vague acceptance criteria. Any team would be
-                very lucky to have him.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">
-                <i class="fas fa-user-circle"></i>
-              </div>
-              <div class="testimonial-info">
-                <h4>James M. Loy</h4>
-                <p>Engineering Manager, SparkCognition</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left quote-icon"></i>
-              <p>
-                I had the pleasure of working with Majid Hussain a couple of
-                years ago on a challenging software development project for a
-                well-known company in the market. The project started from
-                scratch and required a lot of effort and dedication from the
-                team. Despite the challenges, Majid's work was impeccable and he
-                proved to be a very responsible and organized person, always
-                willing to do what was asked of him and completed tasks in a
-                short period of time.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">
-                <i class="fas fa-user-circle"></i>
-              </div>
-              <div class="testimonial-info">
-                <h4>Jennifer Castro</h4>
-                <p>Quality Assurance Lead, SparkCognition</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left quote-icon"></i>
-              <p>
-                Majid is an excellent React developer, his problem solving
-                abilities second to none. He structures his code well, that
-                helps apps to scale. By working smart, he is able to meet tight
-                deadlines. A valuable addition to any organization working with
-                a React based stack.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">
-                <i class="fas fa-user-circle"></i>
-              </div>
-              <div class="testimonial-info">
-                <h4>Zaeem Malik</h4>
-                <p>Software Engineer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="linkedin-recommendation">
-          <p>View more recommendations on my LinkedIn profile</p>
-          <a
-            href="https://www.linkedin.com/in/majidhussainmk/details/recommendations/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outlined"
+          <div
+            class="linkedin-recommendation"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
-            <i class="fab fa-linkedin-in"></i> LinkedIn Profile
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-          <div class="social-links">
+            <p>View more recommendations on my LinkedIn profile</p>
             <a
-              href="https://www.linkedin.com/in/majidhussainmk/"
+              href="https://www.linkedin.com/in/majidhussainmk/details/recommendations/"
               target="_blank"
               rel="noopener noreferrer"
-              class="social-link linkedin"
+              class="btn btn-secondary"
             >
-              <i class="fab fa-linkedin-in"></i>
-              <span>LinkedIn</span>
+              <i class="fab fa-linkedin-in"></i> LinkedIn Profile
             </a>
-            <a
-              href="mailto:majid.hussain.mk@gmail.com"
-              class="social-link email"
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+          <div class="contact-content">
+            <div
+              class="contact-info"
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
-              <i class="fas fa-envelope"></i>
-              <span>Email</span>
-            </a>
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>+923214148818</p>
+              <div class="contact-card glass-card">
+                <h3>Let's Work Together</h3>
+                <p>
+                  I'm always open to discussing new opportunities, interesting
+                  projects, or just having a chat about technology and
+                  development.
+                </p>
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>majid.hussain.mk@gmail.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 321 4148818</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lahore, Pakistan</span>
+                  </div>
+                </div>
+                <div class="social-links">
+                  <a
+                    href="https://www.linkedin.com/in/majidhussainmk/"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/majidhussainmk"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="mailto:majid.hussain.mk@gmail.com"
+                    class="social-link"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
               </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Lahore, Pakistan</p>
-              </div>
+            </div>
+
+            <div
+              class="contact-form-wrapper"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <form
+                action="https://formspree.io/f/myzppndj"
+                method="POST"
+                class="contact-form glass-card"
+                id="contact-form"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-full"
+                  id="submit-btn"
+                >
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-loading" style="display: none">
+                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                  </span>
+                </button>
+
+                <!-- Success Message -->
+                <div
+                  id="success-message"
+                  class="form-message success-message"
+                  style="display: none"
+                >
+                  <i class="fas fa-check-circle"></i>
+                  <p>
+                    Thank you! Your message has been sent successfully. I'll get
+                    back to you soon.
+                  </p>
+                </div>
+
+                <!-- Error Message -->
+                <div
+                  id="error-message"
+                  class="form-message error-message"
+                  style="display: none"
+                >
+                  <i class="fas fa-exclamation-circle"></i>
+                  <p>
+                    Sorry, there was an error sending your message. Please try
+                    again or contact me directly.
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>
-          &copy; <span id="current-year">2024</span> Majid Hussain. All rights
-          reserved.
-        </p>
-        <a href="#home" class="back-to-top">Back to Top</a>
+        <div class="footer-content">
+          <p>
+            &copy; <span id="current-year"></span> Majid Hussain. All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form.js"></script>
-    <script src="assets/js/filters.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/analytics.js"></script>
+    <script>
+      // Set current year
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Mobile navigation toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          navToggle.classList.remove("active");
+        });
+      });
+
+      // Cursor trail effect
+      const cursorTrail = document.querySelector(".cursor-trail");
+      let mouseX = 0,
+        mouseY = 0;
+      let trailX = 0,
+        trailY = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function updateCursorTrail() {
+        const diffX = mouseX - trailX;
+        const diffY = mouseY - trailY;
+
+        trailX += diffX * 0.1;
+        trailY += diffY * 0.1;
+
+        cursorTrail.style.left = trailX + "px";
+        cursorTrail.style.top = trailY + "px";
+
+        requestAnimationFrame(updateCursorTrail);
+      }
+
+      updateCursorTrail();
+
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Form submission with analytics tracking
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const form = e.target;
+          const formData = new FormData(form);
+          const submitBtn = document.getElementById("submit-btn");
+          const btnText = submitBtn.querySelector(".btn-text");
+          const btnLoading = submitBtn.querySelector(".btn-loading");
+          const successMessage = document.getElementById("success-message");
+          const errorMessage = document.getElementById("error-message");
+
+          // Hide any previous messages
+          successMessage.style.display = "none";
+          errorMessage.style.display = "none";
+          successMessage.classList.remove("show");
+          errorMessage.classList.remove("show");
+
+          // Show loading state
+          submitBtn.disabled = true;
+          btnText.style.display = "none";
+          btnLoading.style.display = "inline-flex";
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              // Success
+              successMessage.style.display = "flex";
+              setTimeout(() => successMessage.classList.add("show"), 10);
+              form.reset();
+
+              // Track contact form submission
+              if (window.trackContactForm) {
+                trackContactForm();
+              }
+            } else {
+              throw new Error("Form submission failed");
+            }
+          } catch (error) {
+            // Error
+            errorMessage.style.display = "flex";
+            setTimeout(() => errorMessage.classList.add("show"), 10);
+          } finally {
+            // Reset button state
+            submitBtn.disabled = false;
+            btnText.style.display = "inline";
+            btnLoading.style.display = "none";
+          }
+        });
+    </script>
   </body>
 </html>
