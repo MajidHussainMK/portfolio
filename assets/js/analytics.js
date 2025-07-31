@@ -1,44 +1,37 @@
 // Google Analytics Configuration
-// Replace 'YOUR_GA_MEASUREMENT_ID' with your actual Google Analytics 4 Measurement ID
-// Example: 'G-XXXXXXXXXX'
-
 const GA_MEASUREMENT_ID = "G-XJERSG5WY8";
 
-// Initialize Google Analytics
-function initializeAnalytics() {
-  if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "YOUR_GA_MEASUREMENT_ID") {
-    // Load Google Analytics script
-    const script = document.createElement("script");
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    script.async = true;
-    document.head.appendChild(script);
+// Direct initialization (no DOM wait)
+if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "YOUR_GA_MEASUREMENT_ID") {
+  // Load Google Analytics script immediately
+  const script = document.createElement("script");
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  script.async = true;
+  document.head.appendChild(script);
 
-    // Initialize gtag
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", GA_MEASUREMENT_ID, {
-      // Enhanced measurement features
-      enhanced_measurement_settings: {
-        scrolls: true,
-        outbound_clicks: true,
-        site_search: false,
-        video_engagement: false,
-        file_downloads: true,
-      },
-    });
-
-    // Make gtag available globally
-    window.gtag = gtag;
-
-    console.log("Google Analytics initialized with ID:", GA_MEASUREMENT_ID);
-  } else {
-    console.warn(
-      "Google Analytics not initialized. Please set your GA_MEASUREMENT_ID in analytics.js"
-    );
+  // Initialize dataLayer and gtag immediately
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
   }
+  window.gtag = gtag;
+
+  gtag("js", new Date());
+  gtag("config", GA_MEASUREMENT_ID, {
+    // Enhanced measurement features
+    send_page_view: true,
+    enhanced_measurement_settings: {
+      scrolls: true,
+      outbound_clicks: true,
+      site_search: false,
+      video_engagement: false,
+      file_downloads: true,
+    },
+  });
+
+  console.log("Google Analytics initialized with ID:", GA_MEASUREMENT_ID);
+} else {
+  console.warn("Google Analytics not initialized. Invalid measurement ID.");
 }
 
 // Custom event tracking functions
@@ -68,6 +61,3 @@ function trackProjectView(projectName) {
     event_label: projectName,
   });
 }
-
-// Initialize analytics when DOM is loaded
-document.addEventListener("DOMContentLoaded", initializeAnalytics);
