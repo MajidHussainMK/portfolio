@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Show success message
         showMessage("Message sent successfully!", "success");
 
+        // Track form submission in analytics
+        if (typeof trackContactForm === "function") {
+          trackContactForm();
+        }
+
         // Reset form
         contactForm.reset();
       } catch (error) {
