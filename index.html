@@ -41,11 +41,11 @@
 
     <title>Majid Hussain - MERN Stack Developer</title>
 
-    <!-- Fonts -->
+    <!-- Fonts - Sora for headings, Plus Jakarta Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -87,6 +87,22 @@
     <link rel="manifest" href="assets/images/site.webmanifest" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">MH</div>
+        <div class="preloader-bar">
+          <div class="preloader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
     <!-- Animated Background -->
     <div class="animated-bg"></div>
 
@@ -119,6 +135,14 @@
     <main>
       <!-- Hero Section -->
       <section id="home" class="hero">
+        <!-- Floating Particles -->
+        <div class="particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
         <div class="container">
           <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
             <h1 class="hero-name">Majid Hussain</h1>
@@ -180,15 +204,15 @@
               </p>
               <div class="stats">
                 <div class="stat">
-                  <span class="stat-number">16+</span>
+                  <span class="stat-number" data-target="16" data-suffix="+">0</span>
                   <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat">
-                  <span class="stat-number">5+</span>
+                  <span class="stat-number" data-target="5" data-suffix="+">0</span>
                   <span class="stat-label">Years</span>
                 </div>
                 <div class="stat">
-                  <span class="stat-number">100%</span>
+                  <span class="stat-number" data-target="100" data-suffix="%">0</span>
                   <span class="stat-label">Satisfaction</span>
                 </div>
               </div>
@@ -1208,6 +1232,11 @@
       </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -1224,16 +1253,53 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/analytics.js"></script>
     <script>
+      // =====================
+      // Preloader
+      // =====================
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        
+        // Add loaded class to trigger fade out
+        setTimeout(() => {
+          preloader.classList.add("loaded");
+          document.body.classList.add("page-loaded");
+          
+          // Remove preloader from DOM after animation
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 600);
+        }, 800);
+      });
+
       // Set current year
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
 
-      // Initialize AOS
+      // Initialize AOS with enhanced settings
       AOS.init({
         duration: 800,
-        easing: "ease-in-out",
+        easing: "ease-out-cubic",
         once: true,
-        offset: 100,
+        offset: 80,
+        anchorPlacement: "top-bottom",
+      });
+
+      // =====================
+      // Mobile Navigation
+      // =====================
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains("active")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
       });
 
       // Smooth scrolling for navigation links
@@ -1242,6 +1308,11 @@
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
+            // Close mobile menu first
+            navMenu.classList.remove("active");
+            navToggle.classList.remove("active");
+            document.body.style.overflow = "";
+            
             target.scrollIntoView({
               behavior: "smooth",
               block: "start",
@@ -1250,41 +1321,71 @@
         });
       });
 
-      // Mobile navigation toggle
-      const navToggle = document.querySelector(".nav-toggle");
-      const navMenu = document.querySelector(".nav-menu");
-
-      navToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        navToggle.classList.toggle("active");
-      });
-
       // Close mobile menu when clicking on a link
       document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", () => {
           navMenu.classList.remove("active");
           navToggle.classList.remove("active");
+          document.body.style.overflow = "";
         });
       });
 
-      // Cursor trail effect
+      // =====================
+      // Active Navigation Highlighting
+      // =====================
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      function highlightNavigation() {
+        const scrollY = window.scrollY;
+        
+        sections.forEach((section) => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 150;
+          const sectionId = section.getAttribute("id");
+          
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === `#${sectionId}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }
+
+      // =====================
+      // Cursor Trail
+      // =====================
       const cursorTrail = document.querySelector(".cursor-trail");
       let mouseX = 0,
         mouseY = 0;
       let trailX = 0,
         trailY = 0;
+      let isMoving = false;
+      let moveTimeout;
 
       document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
+        isMoving = true;
+        cursorTrail.style.opacity = "0.5";
+        
+        clearTimeout(moveTimeout);
+        moveTimeout = setTimeout(() => {
+          isMoving = false;
+          cursorTrail.style.opacity = "0.2";
+        }, 100);
       });
 
       function updateCursorTrail() {
+        const speed = isMoving ? 0.15 : 0.08;
         const diffX = mouseX - trailX;
         const diffY = mouseY - trailY;
 
-        trailX += diffX * 0.1;
-        trailY += diffY * 0.1;
+        trailX += diffX * speed;
+        trailY += diffY * speed;
 
         cursorTrail.style.left = trailX + "px";
         cursorTrail.style.top = trailY + "px";
@@ -1294,17 +1395,107 @@
 
       updateCursorTrail();
 
-      // Header scroll effect
+      // =====================
+      // Scroll Progress & Header
+      // =====================
+      const scrollProgress = document.querySelector(".scroll-progress");
+      const backToTopBtn = document.getElementById("back-to-top");
+      
+      function updateScrollProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = scrollPercent + "%";
+      }
+
       window.addEventListener("scroll", () => {
         const header = document.querySelector(".header");
-        if (window.scrollY > 100) {
+        
+        // Header background on scroll
+        if (window.scrollY > 50) {
           header.classList.add("scrolled");
         } else {
           header.classList.remove("scrolled");
         }
+        
+        // Update scroll progress
+        updateScrollProgress();
+        
+        // Update active navigation
+        highlightNavigation();
+        
+        // Show/hide back to top button
+        if (window.scrollY > 500) {
+          backToTopBtn.classList.add("visible");
+        } else {
+          backToTopBtn.classList.remove("visible");
+        }
       });
 
-      // Form submission with analytics tracking
+      // Initial updates
+      updateScrollProgress();
+      highlightNavigation();
+
+      // =====================
+      // Back to Top Button
+      // =====================
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      // =====================
+      // Animated Stats Counter
+      // =====================
+      const statNumbers = document.querySelectorAll(".stat-number[data-target]");
+      let statsAnimated = false;
+
+      function animateStats() {
+        if (statsAnimated) return;
+        
+        statNumbers.forEach((stat) => {
+          const target = parseInt(stat.getAttribute("data-target"));
+          const suffix = stat.getAttribute("data-suffix") || "";
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          let current = 0;
+          
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              stat.textContent = Math.floor(current) + suffix;
+              requestAnimationFrame(updateCounter);
+            } else {
+              stat.textContent = target + suffix;
+            }
+          };
+          
+          updateCounter();
+        });
+        
+        statsAnimated = true;
+      }
+
+      // Observe stats section for animation trigger
+      const statsSection = document.querySelector(".stats");
+      if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateStats();
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        
+        statsObserver.observe(statsSection);
+      }
+
+      // =====================
+      // Form Submission
+      // =====================
       document
         .querySelector(".contact-form")
         .addEventListener("submit", async (e) => {
@@ -1362,6 +1553,38 @@
             btnLoading.style.display = "none";
           }
         });
+
+      // =====================
+      // Intersection Observer
+      // =====================
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const animateOnScroll = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("section").forEach((section) => {
+        animateOnScroll.observe(section);
+      });
+
+      // Reduced motion check
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        AOS.init({ disable: true });
+        // Set stats to final values immediately
+        statNumbers.forEach((stat) => {
+          const target = stat.getAttribute("data-target");
+          const suffix = stat.getAttribute("data-suffix") || "";
+          stat.textContent = target + suffix;
+        });
+        statsAnimated = true;
+      }
     </script>
   </body>
 </html>
